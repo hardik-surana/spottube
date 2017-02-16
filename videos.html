@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Search Videos - Spottube</title>
+
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/date.js" type="text/javascript"></script>
+    <script src="js/jquery.timeago.js" type="text/javascript"></script>
+
+    <script type="text/javascript" src="js/auth.js"></script>
+    <script type="text/javascript" src="js/search.js"></script>
+    <script src="https://apis.google.com/js/client.js?onload=onClientLoad" type="text/javascript"></script>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="images/favicon.png">
+</head>
+
+<body class="videospage">
+
+    <header id="header">
+
+        <nav class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
+                </div>
+				
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="music.html">Music</a></li>
+                        <li class="active"><a href="videos.html">Videos</a></li>                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+		
+    </header>
+
+    <section id="primarysec" class="videos">
+	   <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                </div>
+                <div class="col-md-6">
+                    <div class="searchbox searchvideos center">
+                        <h2>search videos</h2>
+                        <div class="form-group">
+                            <form name="searchvideosForm" id="searchvideosForm" data-searchtype="videos">
+                                <input type="text" name="searchtext" class="form-control tosearch" required="required" placeholder="type here to search.." value="">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="content">
+        <div class="container">
+            <div id="resultLoading"><div>Wait! Fetching videos...</div></div>
+            <div id="searchTitle" style="display: none;"><div class="title">&nbsp;</div></div>
+            <ul id="searchResult">
+
+            </ul>
+
+            <ul id="favVideos">
+
+            </ul>
+        </div>
+    </section>
+
+    <footer id="footer" class="midnight-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    Copyright &copy; 2015 <a target="_blank" href="index.html">Spottube by Hardik Surana</a>
+                </div>
+                <div class="col-sm-6">
+                    <ul class="pull-right">
+                        <li><a href="about-spottube.html">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="js/videos.js"></script>
+
+</body>
+</html>
