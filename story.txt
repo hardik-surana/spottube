@@ -1,1 +1,0 @@
-﻿../story/whatisnext.htm?../project/story.txt                    What is Next?index.html															Project - Spottube../story/index.htm?../documentation/story.txt						Project - Documentation
